@@ -39,10 +39,10 @@ app.post('/', (req, res) => {
     var jsonData = JSON.stringify(data);
 
     var options = {
-        url: "https://us20.api.mailchimp.com/3.0/lists/a8ca195d79",
+
         method: "POST",
         headers: {
-            "Authorization": "travis11 3f12e234c9fe3e882feaa05b6fe0f5c1-us20"
+
         },
         body: jsonData
     };
@@ -76,8 +76,3 @@ app.listen(process.env.PORT || 3000, (req, res) =>{
     console.log(`The app is running on port ${port}.`);
 });
 
-// apiKey: 3f12e234c9fe3e882feaa05b6fe0f5c1-us20
-
-// server: us20
-
-// list id: a8ca195d79
